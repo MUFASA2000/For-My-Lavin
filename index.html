@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Lavin 💗</title>
+  <meta name="description" content="A little world made with love, just for Lavin.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">For My Lavin <span>♡</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#letters">Love Letters</a>
+      <a href="#memories">Memories</a>
+      <a href="#reasons">Reasons</a>
+      <a href="#journey">Our Journey</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="floating-heart heart-one">♡</div>
+      <div class="floating-heart heart-two">♥</div>
+
+      <p class="eyebrow">A LITTLE WORLD MADE FOR YOU</p>
+      <h1>Hey, my <span>Lavin</span> 💗</h1>
+      <p class="hero-text">
+        If I could give you one thing in this world,
+        it would be the ability to see yourself through my eyes.
+        Maybe then you'd understand just how special you are to me.
+      </p>
+
+      <a href="#letters" class="primary-button">Open your little surprise 💌</a>
+
+      <div class="love-note">
+        <span>♡</span>
+        <p>Made with love, by your favourite person.</p>
+      </div>
+    </section>
+
+    <section class="section" id="letters">
+      <p class="eyebrow">A MESSAGE FOR EVERY MOMENT</p>
+      <h2>Open when... 💌</h2>
+      <p class="section-intro">Whatever you're feeling, there's a little message here for you.</p>
+
+      <div class="card-grid">
+        <button class="letter-card" data-letter="miss">
+          <span class="card-icon">🥹</span>
+          <strong>You miss me</strong>
+          <span>Open this letter ♡</span>
+        </button>
+
+        <button class="letter-card" data-letter="sad">
+          <span class="card-icon">🌷</span>
+          <strong>You've had a hard day</strong>
+          <span>Open this letter ♡</span>
+        </button>
+
+        <button class="letter-card" data-letter="reassurance">
+          <span class="card-icon">🫶</span>
+          <strong>You need reassurance</strong>
+          <span>Open this letter ♡</span>
+        </button>
+
+        <button class="letter-card" data-letter="sleep">
+          <span class="card-icon">🌙</span>
+          <strong>You're going to sleep</strong>
+          <span>Open this letter ♡</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+      <h2>Our little world 📸</h2>
+      <p class="section-intro">
+        Every memory with you is a page I'd read a thousand times.
+      </p>
+
+      <div class="memory-grid">
+        <article class="memory-card" data-memory-category="beginning">
+          <h3>Our beginning</h3>
+          <p>Where our story keeps unfolding.</p>
+          <label class="memory-upload">
+            Add photos or videos
+            <input type="file" accept="image/*,video/*" multiple data-memory-upload>
+          </label>
+          <p class="memory-status" data-memory-status aria-live="polite"></p>
+          <div class="memory-items" data-memory-items></div>
+        </article>
+
+        <article class="memory-card" data-memory-category="smile">
+          <h3>Your beautiful smile</h3>
+          <p>One of my favourite sights in the world.</p>
+          <label class="memory-upload">
+            Add photos or videos
+            <input type="file" accept="image/*,video/*" multiple data-memory-upload>
+          </label>
+          <p class="memory-status" data-memory-status aria-live="polite"></p>
+          <div class="memory-items" data-memory-items></div>
+        </article>
+
+        <article class="memory-card" data-memory-category="moments">
+          <h3>Our little moments</h3>
+          <p>The simple things mean the most.</p>
+          <label class="memory-upload">
+            Add photos or videos
+            <input type="file" accept="image/*,video/*" multiple data-memory-upload>
+          </label>
+          <p class="memory-status" data-memory-status aria-live="polite"></p>
+          <div class="memory-items" data-memory-items></div>
+        </article>
+      </div>
+
+      <p class="small-note">
+        Your memories are saved in this browser on this device.
+      </p>
+    </section>
+
+    <section class="section reasons-section" id="reasons">
+      <p class="eyebrow">HERE'S YOUR REMINDER</p>
+      <h2>Why I love you 💕</h2>
+      <p class="section-intro">
+        One button. One reason. And so many more waiting to be told.
+      </p>
+
+      <div class="reason-box">
+        <div class="big-heart">♥</div>
+        <p id="reasonText">Tap below, beautiful.</p>
+        <button class="primary-button" id="reasonButton">
+          Tell me why ♡
+        </button>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <p class="eyebrow">AND OUR STORY CONTINUES</p>
+      <h2>Us, always 🗓️</h2>
+      <p class="section-intro">
+        Every day is another little chapter of our story.
+      </p>
+
+      <div class="journey-card">
+        <span class="card-icon">💑</span>
+        <p class="journey-label">Time since our special day</p>
+        <h3 id="anniversaryCount">Our story is counting...</h3>
+        <p id="anniversaryDate" class="small-note"></p>
+        <p class="journey-message">
+          My favourite part of the future is knowing I get to keep
+          making memories with you. ♡
+        </p>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <span class="big-heart">♡</span>
+      <h2>Just in case I haven't said it today...</h2>
+      <p>You're loved, you're appreciated, and you're so special to me, Lavin.</p>
+      <p class="signature">Forever your boy. 💗</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love for Lavin ♡</p>
+    <p>One girl. One story. A thousand little reasons.</p>
+  </footer>
+
+  <!-- Letter popup -->
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true"
+         aria-labelledby="modalTitle">
+      <button class="close-button" id="closeModal" aria-label="Close">×</button>
+      <span class="card-icon">💌</span>
+      <h2 id="modalTitle">A letter for you</h2>
+      <p id="modalMessage"></p>
+      <button class="primary-button" id="modalDone">Sending you a hug ♡</button>
+    </div>
+  </div>
+
+</body>
+</html>
