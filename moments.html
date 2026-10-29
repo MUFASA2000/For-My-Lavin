@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our little moments | For My Lavin</title>
+  <meta name="description" content="Add photos, videos, and captions to Our little moments.">
+  <link rel="stylesheet" href="style.css">
+  <script src="memory-page.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html#home" class="logo">For My Lavin <span>♡</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#memories">Memories</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section memory-page-section" data-memory-category="moments">
+      <a class="memory-back" href="index.html#memories">← Back to memories</a>
+      <p class="eyebrow">THE SIMPLE THINGS</p>
+      <h1>Our little moments</h1>
+      <p class="section-intro">Add photos or videos and a caption for each one.</p>
+
+      <div class="memory-page-card">
+        <div class="memory-page-actions">
+          <label class="memory-upload">
+            Add photos or videos
+            <input type="file" accept="image/*,video/*" multiple data-memory-upload>
+          </label>
+        </div>
+        <p class="memory-status" data-memory-status aria-live="polite"></p>
+        <div class="memory-items" data-memory-items></div>
+      </div>
+      <p class="small-note">Memories are saved in this browser on this device.</p>
+    </section>
+  </main>
+</body>
+</html>
